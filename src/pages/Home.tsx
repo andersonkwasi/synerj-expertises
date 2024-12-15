@@ -1,93 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
 import service from "../assets/Synerj.jpeg";
-
-// Images placeholders - vous devrez remplacer par vos vraies images
-const securityImages = [
-  {
-    title: 'Protection des Endpoints',
-    description: 'Sécurisation avancée de tous vos points d\'accès réseau',
-    imageUrl: 'https://www.watchguard.com/sites/default/files/watchguard-endpoint-hdr.png'
-  },
-  {
-    title: 'Protection des Données',
-    description: 'Stratégies robustes de chiffrement et de confidentialité',
-    imageUrl: 'https://af2a.com/wp-content/uploads/2023/12/Protection-des-donnees_Petit.png'
-  },
-  {
-    title: 'Contrôle d\'accès reseau',
-    description: 'Contrôlez l\'accès aux applications et aux ressources auxquelles les utilisateurs souhaitent accéder',
-    imageUrl: 'https://www.titanhq.fr/wp-content/uploads/2021/04/controle-acces-internet-entreprise-1-1024x679.jpg'
-  }
-];
-
-const SecurityCarousel: React.FC = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prevSlide) =>
-        (prevSlide + 1) % securityImages.length
-      );
-    }, 5000); // Change slide every 5 seconds
-
-    return () => clearInterval(timer);
-  }, []);
-
-  const handleDotClick = (index: number) => {
-    setCurrentSlide(index);
-  };
-
-  return (
-    <div className="relative w-full h-screen overflow-hidden">
-      <AnimatePresence>
-        {securityImages.map((slide, index) => (
-          currentSlide === index && (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 1 }}
-              className="absolute inset-0"
-            >
-              <div
-                className="absolute inset-0 bg-cover bg-center"
-                style={{
-                  backgroundImage: `url(${slide.imageUrl})`,
-                  filter: 'brightness(0.6)'
-                }}
-              />
-              <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white p-4">
-                <h2 className="text-4xl md:text-6xl font-bold mb-4">
-                  {slide.title}
-                </h2>
-                <p className="text-xl md:text-2xl max-w-2xl">
-                  {slide.description}
-                </p>
-              </div>
-            </motion.div>
-          )
-        ))}
-      </AnimatePresence>
-
-      {/* Navigation Dots */}
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex space-x-4">
-        {securityImages.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => handleDotClick(index)}
-            className={`
-              w-4 h-4 rounded-full transition-all duration-300
-              ${currentSlide === index ? 'bg-white scale-125' : 'bg-white/50'}
-            `}
-          />
-        ))}
-      </div>
-    </div>
-  );
-};
+import SecurityCarousel from "../components/SecurityCarousel"
+import PartnerLogos from "../components/PartnerLogos"
 
 const Home: React.FC = () => {
   return (
@@ -139,42 +54,44 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                title: "CyberSOC / CSIRT",
-                description: "Surveillance et réponse aux incidents de sécurité",
-                imageUrl: "https://via.placeholder.com/150" // remplacez par votre vraie image
+                title: "Gestion des Vulnérabilités",
+                description: "Anticipez les menaces avant qu'elles ne frappent : transformez vos failles en remparts de sécurité",
+                imageUrl: "https://www.advancia-itsystem.com/images/banniere/104.jpg" // remplacez par votre vraie image
               },
               {
-                title: "Managed Security Service Provider",
-                description: "Externalisation de la sécurité de votre système d'information",
-                imageUrl: "https://via.placeholder.com/150" // remplacez par votre vraie image
+                title: "Sécurité des postes de travail",
+                description: "Votre système d'information blindé, sans compromis : la sécurité externalisée qui libère votre potentiel",
+                imageUrl: "https://www.cnil.fr/sites/cnil/files/styles/contenu_generique_visuel/public/thumbnails/image/cybersecurite.jpeg" // remplacez par votre vraie image
               },
               {
-                title: "Sécurité Offensive",
-                description: "Évaluation proactive de la sécurité de vos systèmes",
-                imageUrl: "https://via.placeholder.com/150" // remplacez par votre vraie image
+                title: "Gestion des Comptes à haut privilège",
+                description: "Maîtrisez les accès critiques : un bouclier intelligent contre les risques d'intrusion",
+                imageUrl: "https://data.ictjournal.ch/187214.png" // remplacez par votre vraie image
               },
               {
-                title: "Gouvernance, risque et conformité",
-                description: "Définition de politiques de sécurité et de conformité",
-                imageUrl: "https://via.placeholder.com/150" // remplacez par votre vraie image
+                title: "Sécurisation de la Messagerie",
+                description: "Vos communications protégées, votre conformité garantie : la messagerie sous haute surveillance",
+                imageUrl: "https://info.vadesecure.com/hubfs/featured%20image%20-%204%20Email%20Security%20Tools%20You%20Need%20in%20Your%20Stack.jpeg" // remplacez par votre vraie image
               },
               {
-                title: "Cyberdefense",
-                description: "Protection contre les menaces cyber avancées",
-                imageUrl: "https://via.placeholder.com/150" // remplacez par votre vraie image
+                title: "Sécurisation du trafic réseau",
+                description: "Filtrez, bloquez, sécurisez : votre réseau, un territoire infranchissable pour les cybermenaces",
+                imageUrl: "https://www.cisco.com/c/dam/assets/swa/img/anchor-info/what-is-network-security-blog-banner-628x353.png" // remplacez par votre vraie image
               },
               {
-                title: "Mise à disposition de ressources expertes",
-                description: "Équipes dédiées pour accompagner vos projets de sécurité",
-                imageUrl: "https://via.placeholder.com/150" // remplacez par votre vraie image
+                title: "Traçabilité des accès aux bases de données",
+                description: "Chaque connexion sous contrôle : des experts dédiés pour traquer et prévenir les risques",
+                imageUrl: "https://www.datasunrise.com/wp-content/uploads/2024/05/Data-Lineage-1024x585.webp" // remplacez par votre vraie image
               }
             ].map((area, index) => (
               <div
                 key={index}
                 className="bg-white/10 p-6 rounded-xl border border-white/20 hover:bg-white/20 transition"
               >
-                <div className="rounded-lg overflow-hidden mb-4">
-                  <img src={area.imageUrl} alt={area.title} className="w-full h-auto" />
+                <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden mb-4">
+                  <img src={area.imageUrl} 
+                  alt={area.title} 
+                  className="w-full h-full object-cover" />
                 </div>
                 <h3 className="text-lg md:text-xl font-bold mb-3">{area.title}</h3>
                 <p className="text-white/70">{area.description}</p>
@@ -200,6 +117,7 @@ const Home: React.FC = () => {
             </Link>
           </div>
         </section>
+        <PartnerLogos />
       </div>
     </div>
   );
