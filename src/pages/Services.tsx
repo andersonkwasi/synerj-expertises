@@ -9,7 +9,6 @@ import {
   WrenchIcon
 } from 'lucide-react';
 
-// Interface pour définir la structure d'un service
 interface ServiceItem {
   title: string;
   description: string;
@@ -17,7 +16,6 @@ interface ServiceItem {
 }
 
 const Services: React.FC = () => {
-  // Données des services
   const services: ServiceItem[] = [
     {
       title: "Formation",
@@ -55,7 +53,9 @@ const Services: React.FC = () => {
     <div className="bg-gradient-to-br from-neoery-blue to-neoery-black text-white">
       {/* Section Titre */}
       <section className="container mx-auto px-4 py-16 text-center">
-        <h1 className="text-5xl font-bold mb-6">Nos Services</h1>
+        <h1 className="text-5xl font-bold text-neoery-orange mb-6">
+          Nos Services
+        </h1>
         <p className="text-xl text-white/80 max-w-2xl mx-auto">
           SYNERJ transforme vos défis technologiques en solutions innovantes et performantes.
         </p>
@@ -67,7 +67,7 @@ const Services: React.FC = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white/10 p-6 rounded-xl border border-white/20 hover:bg-white/20 transition transform hover:scale-105 hover:shadow-xl duration-300 flex flex-col"
+              className="bg-white/10 p-6 rounded-xl border border-white/20 hover:bg-white/20 transition transform hover:scale-105 hover:shadow-2xl duration-300 flex flex-col"
             >
               <div className="mb-4 self-center">{service.icon}</div>
               <h3 className="text-xl font-bold mb-3 text-neoery-orange text-center">
@@ -81,8 +81,8 @@ const Services: React.FC = () => {
 
       {/* Section Appel à l'Action */}
       <section className="container mx-auto px-4 py-16 text-center">
-        <div className="bg-neoery-orange/20 p-12 rounded-2xl">
-          <h2 className="text-4xl font-bold mb-6">
+        <div className="bg-gradient-to-r from-neoery-orange/30 to-neoery-blue/40 p-12 rounded-2xl shadow-xl">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Votre Projet Mérite Une Solution Sur-Mesure
           </h2>
           <p className="text-xl mb-8 text-white/80">
