@@ -1,0 +1,9 @@
+@tailwind base;     /* Styles de réinitialisation et de base */
+@tailwind components; /* Styles de composants prédéfinis */
+@tailwind utilities;  /* Classes utilitaires de Tailwind */
+
+@layer base {
+  body {
+    @apply font-sans bg-white text-neoery-black;
+  }
+}
