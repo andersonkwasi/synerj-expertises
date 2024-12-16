@@ -70,34 +70,34 @@ const Home: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
             {
-              title: "Gestion des Vulnérabilités",
+              title: "Conseil, Audit et Optimisation en solution IT et Télécom",
               description: "Anticipez les menaces avant qu'elles ne frappent : transformez vos failles en remparts de sécurité",
-              imageUrl: "https://www.advancia-itsystem.com/images/banniere/104.jpg"
+              imageUrl: "https://assets-global.website-files.com/62976fe97a37b922a46d6609/6425631fa838bd4853017334_7.png"
             },
             {
-              title: "Sécurité des postes de travail",
+              title: "Assistance Technique, Maintenace et support",
               description: "Votre système d'information blindé, sans compromis : la sécurité externalisée qui libère votre potentiel",
-              imageUrl: "https://www.cnil.fr/sites/cnil/files/styles/contenu_generique_visuel/public/thumbnails/image/cybersecurite.jpeg"
+              imageUrl: "https://www.moyens.net/wp-content/uploads/2022/02/Limportance-des-services-informatiques.jpg"
             },
             {
-              title: "Gestion des Comptes à haut privilège",
+              title: "Ingénieurie et AMAO IT et Télécom",
               description: "Maîtrisez les accès critiques : un bouclier intelligent contre les risques d'intrusion",
-              imageUrl: "https://data.ictjournal.ch/187214.png"
+              imageUrl: "https://th.bing.com/th/id/OIP.PshIiN9l_cGVjzHqirXQXAHaD3?rs=1&pid=ImgDetMain"
             },
             {
-              title: "Sécurisation de la Messagerie",
+              title: "Conception, Integration et Opération",
               description: "Vos communications protégées, votre conformité garantie : la messagerie sous haute surveillance",
-              imageUrl: "https://info.vadesecure.com/hubfs/featured%20image%20-%204%20Email%20Security%20Tools%20You%20Need%20in%20Your%20Stack.jpeg"
+              imageUrl: "https://img.freepik.com/vector-premium/dibujo-fabrica-cielo-azul-fondo-nubes_1108514-68450.jpg"
             },
             {
-              title: "Sécurisation du trafic réseau",
+              title: "Services Managés XAAS",
               description: "Filtrez, bloquez, sécurisez : votre réseau, un territoire infranchissable pour les cybermenaces",
-              imageUrl: "https://www.cisco.com/c/dam/assets/swa/img/anchor-info/what-is-network-security-blog-banner-628x353.png"
+              imageUrl: "https://www.acecloudhosting.com/wp-content/uploads/2022/12/saas.jpg"
             },
             {
-              title: "Traçabilité des accès aux bases de données",
+              title: "Formation, Transfert de Compétences et Certification",
               description: "Chaque connexion sous contrôle : des experts dédiés pour traquer et prévenir les risques",
-              imageUrl: "https://www.datasunrise.com/wp-content/uploads/2024/05/Data-Lineage-1024x585.webp"
+              imageUrl: "https://www.espritcoaching.fr/wp-content/uploads/formations_entreprise2.jpg"
             }
           ].map((area, index) => (
             <motion.div

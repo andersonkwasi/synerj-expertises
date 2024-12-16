@@ -130,17 +130,16 @@ const Contact: React.FC = () => {
           <div className="space-y-6">
             <div className="bg-white/10 p-6 rounded-xl border border-white/20">
               <h3 className="text-xl font-bold mb-4 text-neoery-green">Coordonnées</h3>
-              <div className="space-y-3 text-white/70">
-                <p>📍 Yopuougon LUBAFRIQUE</p>
-                <p>📞 +225 01 03 13 13 00</p>
-                <p>✉️ contact@synerj.com</p>
+              <div className="space-y-3 text-white/70">                
+                <p>📞 +225 01 04 04 04 21/22</p>
+                <p>✉️ sales@synerj-expertises.com</p>
               </div>
             </div>
 
             <div className="bg-white/10 p-6 rounded-xl border border-white/20">
               <h3 className="text-xl font-bold mb-4 text-neoery-green">Horaires</h3>
               <div className="text-white/70">
-                <p>Lundi - Vendredi : 9h - 17h</p>
+                <p>Lundi - Vendredi : 08h30 - 17h30</p>
                 <p>Samedi : Sur rendez-vous</p>
                 <p>Dimanche : Fermé</p>
               </div>

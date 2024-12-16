@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../media/SYNERJ.png';
+import Logo from '../media/logo_synerj.jpeg';
 
 const Header: React.FC = () => {
   return (
@@ -33,14 +33,6 @@ const Header: React.FC = () => {
                 className="hover:text-neoery-orange transition"
               >
                 Services
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/partners"
-                className="hover:text-neoery-orange transition"
-              >
-                Partenaires
               </Link>
             </li>
             <li>

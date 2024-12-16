@@ -1,6 +1,5 @@
 import React from 'react';
-import profile from "../media/profile.jpg"
-import { Shield, Rocket, Trophy } from 'lucide-react';
+import { CheckCircle, Star, Handshake, Hand, Shield, Award } from 'lucide-react';
 
 const About: React.FC = () => {
   return (
@@ -10,8 +9,8 @@ const About: React.FC = () => {
       <section className="container mx-auto px-4 py-20 text-center">
         <h1 className="text-5xl font-bold mb-6">Qui Sommes-Nous ?</h1>
         <p className="text-xl text-white/80 max-w-3xl mx-auto">
-          <strong>SYNERJ</strong> est une entreprise innovante spécialisée dans l'intégration de solutions informatiques sur mesure,
-          avec un engagement inébranlable envers la sécurité et l'excellence.
+        Née d'une synergie d'expériences et d'expertises,<strong> SYNERJ</strong> est une SS2I spécialisée dans l'accompagnement des entreprises à adresser les défis et problématiques 
+        liées aux métiers de l'informatique, avec des valeurs propres à la vision du fondateur.
         </p>
       </section>
 
@@ -21,16 +20,14 @@ const About: React.FC = () => {
           <div>
             <h2 className="text-4xl font-bold mb-6">Notre Mission</h2>
             <p className="text-white/70 leading-relaxed">
-              Chez <strong></strong> SYNERJ, nous croyons que la technologie doit être un levier de croissance, jamais un frein.
-              Notre mission est de fournir des solutions fiables et sécurisées qui transforment vos défis technologiques
-              en opportunités stratégiques.
+              Chez <strong>SYNERJ</strong>, Nous croyons que la technologie doit être un levier de croissance stratégique pour les entreprises.
+              Notre mission est de fournir aux entreprises des solutions sur mesure avec pour objectif de les accompagner à faire face à leurs défis et challenges.
             </p>
           </div>
           <div className="bg-white/10 p-8 rounded-xl border border-white/20">
             <h3 className="text-xl font-bold mb-4 text-neoery-green">Notre Vision</h3>
             <p className="text-white/70 leading-relaxed">
-              Être le partenaire de confiance pour les entreprises qui recherchent des solutions informatiques innovantes
-              et sécurisées, en devenant un acteur clé de la transformation numérique.
+              Être le partenaire de confiance pour les entreprises qui recherchent des solutions informatiques innovantes, sécurisées et adapté à leur environnement.
             </p>
           </div>
         </div>
@@ -39,71 +36,67 @@ const About: React.FC = () => {
       {/* Valeurs */}
       <section className="container mx-auto px-4 py-16">
         <h2 className="text-4xl font-bold text-center mb-12">Nos Valeurs</h2>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-4 gap-8">
           {[
             {
-              title: "Sécurité Avant Tout",
-              description: "Dans un monde numérique en constante évolution, nous plaçons la cybersécurité au cœur de chaque solution. Votre tranquillité d'esprit est notre engagement",
-              icon: Shield,
+              title: "RÉACTIVITÉ",
+              icon: CheckCircle,
             },
             {
-              title: "Innovation Permanente",
-              description: "Nous ne suivons pas les tendances, nous les créons. Notre approche proactive garantit que vous restez toujours un temps d'avance.",
-              icon: Rocket,
+              title: "PROXIMITÉ",
+              icon: Handshake,
             },
             {
-              title: "Excellence et Fiabilité",
-              description: "Chaque projet est une promesse. Nos solutions ne sont pas simplement des outils, mais des partenaires stratégiques de votre croissance.",
-              icon: Trophy,
+              title: "RESPECT DES ENGAGEMENTS",
+              icon: Hand,
+            },
+            {
+              title: "QUALITÉ",
+              icon: Star,
             },
           ].map((value, index) => (
             <div
               key={index}
               className="bg-white/10 p-6 rounded-xl border border-white/20 hover:bg-white/20 transition"
             >
-              <div className="text-4xl mb-4 text-neoery-green">
+              <div className="text-4xl mb-4 text-yellow-500">
                 <value.icon size={48} />
               </div>
               <h3 className="text-xl font-bold mb-3">{value.title}</h3>
-              <p className="text-white/70">{value.description}</p>
             </div>
           ))}
         </div>
       </section>
-
-      {/* Section Équipe */}
-      <section className="container mx-auto px-4 py-16">
-        <h2 className="text-4xl font-bold text-center mb-12">Notre Équipe</h2>
+{/* Nos Certifications */}
+<section className="container mx-auto px-4 py-16">
+        <h2 className="text-4xl font-bold text-center mb-12">Nos Certifications</h2>
         <div className="grid md:grid-cols-3 gap-8">
-          {[
+          {[ 
             {
-              picture: profile,
-              name: "Paul Henri BOURON",
-              role: "CEO",
-              description: "Visionnaire avec une expertise en sécurité informatique et en stratégie commerciale.",
+              icon: Shield,
+              title: "Certification ISO 27001",
+              description: "Assure la sécurité de vos informations et de vos données.",
             },
             {
-
-              picture: profile,
-              name: "Michael Konan",
-              role: "Commercial",
-              description: "Expert commercial, adapte vos budgets à vos projets.",
+              icon: Award,
+              title: "Certification CMMI",
+              description: "Garantie de la qualité dans les processus de développement.",
             },
             {
-              picture: profile,
-              name: "Anderson Kwsy",
-              role: "Avant-Vente",
-              description: "Passionné par la Téchnologie, Vous accompagne dans l'intégration de vos solutions.",
+              icon: Star,
+              title: "Partenaire Microsoft Gold",
+              description: "Un partenariat de confiance avec l'un des leaders mondiaux de la technologie.",
             },
-          ].map((member, index) => (
+          ].map((certification, index) => (
             <div
               key={index}
-              className="bg-white/10 p-6 rounded-xl border border-white/20 text-center"
+              className="bg-white/10 p-6 rounded-xl border border-white/20 text-center hover:bg-white/20 transition transform hover:scale-105 duration-300 ease-in-out"
             >
-              <img src={member.picture} alt={member.name} className="w-24 h-24 rounded-full mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">{member.name}</h3>
-              <p className="text-neoery-green mb-2">{member.role}</p>
-              <p className="text-white/70 text-sm">{member.description}</p>
+              <div className="text-4xl mb-4 text-yellow-500">
+                <certification.icon size={48} />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-white">{certification.title}</h3>
+              <p className="text-white/70 text-sm">{certification.description}</p>
             </div>
           ))}
         </div>
