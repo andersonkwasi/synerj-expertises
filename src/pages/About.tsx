@@ -7,8 +7,6 @@ import {
   Shield, 
   Award,
   CheckCircle2,
-  Globe,
-  Users 
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 
