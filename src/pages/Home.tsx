@@ -5,6 +5,7 @@ import service from "../assets/Synerj.jpeg";
 import SecurityCarousel from "../components/SecurityCarousel";
 import PartnerLogos from "../components/PartnerLogos";
 
+
 const Home: React.FC = () => {
   return (
     <div>
@@ -59,63 +60,70 @@ const Home: React.FC = () => {
 
         {/* Section Expertise */}
         <section className="container mx-auto px-4 py-16">
-        <motion.h2
-          className="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
-          Notre Expertise Technologique
-        </motion.h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {[
-            {
+          <motion.h2
+            className="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+            Notre Expertise Technologique
+          </motion.h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[{
               title: "Conseil, Audit et Optimisation en solution IT et Télécom",
-              description: "Anticipez les menaces avant qu'elles ne frappent : transformez vos failles en remparts de sécurité",
-              imageUrl: "https://assets-global.website-files.com/62976fe97a37b922a46d6609/6425631fa838bd4853017334_7.png"
+              description: "Transformez vos failles en remparts de sécurité grâce à notre expertise en audit et optimisation des systèmes informatiques.",
+              imageUrl: "https://assets-global.website-files.com/62976fe97a37b922a46d6609/6425631fa838bd4853017334_7.png",
+              pageUrl: "/consulting"
             },
             {
-              title: "Assistance Technique, Maintenace et support",
-              description: "Votre système d'information blindé, sans compromis : la sécurité externalisée qui libère votre potentiel",
-              imageUrl: "https://www.moyens.net/wp-content/uploads/2022/02/Limportance-des-services-informatiques.jpg"
+              title: "Assistance Technique, Maintenance et Support",
+              description: "Libérez votre potentiel avec notre sécurité externalisée qui vous protège sans compromis.",
+              imageUrl: "https://i1.moyens.net/io/images/2022/02/Limportance-des-services-informatiques.jpg",
+              pageUrl: "/assistance"
             },
             {
               title: "Ingénieurie et AMAO IT et Télécom",
-              description: "Maîtrisez les accès critiques : un bouclier intelligent contre les risques d'intrusion",
-              imageUrl: "https://th.bing.com/th/id/OIP.PshIiN9l_cGVjzHqirXQXAHaD3?rs=1&pid=ImgDetMain"
+              description: "Bénéficiez d'un bouclier intelligent contre les risques d'intrusion grâce à notre maîtrise des accès critiques.",
+              imageUrl: "https://th.bing.com/th/id/OIP.PshIiN9l_cGVjzHqirXQXAHaD3?rs=1&pid=ImgDetMain",
+              pageUrl: "/engineering"
             },
             {
               title: "Conception, Integration et Opération",
-              description: "Vos communications protégées, votre conformité garantie : la messagerie sous haute surveillance",
-              imageUrl: "https://img.freepik.com/vector-premium/dibujo-fabrica-cielo-azul-fondo-nubes_1108514-68450.jpg"
+              description: "Votre conformité garantie et vos communications protégées, grâce à notre expertise en messagerie sécurisée.",
+              imageUrl: "https://img.freepik.com/vector-premium/dibujo-fabrica-cielo-azul-fondo-nubes_1108514-68450.jpg",
+              pageUrl: "/conceptions"
             },
             {
               title: "Services Managés XAAS",
-              description: "Filtrez, bloquez, sécurisez : votre réseau, un territoire infranchissable pour les cybermenaces",
-              imageUrl: "https://www.acecloudhosting.com/wp-content/uploads/2022/12/saas.jpg"
+              description: "Transformez votre réseau en un territoire infranchissable pour les cybermenaces avec nos services de filtrage, de blocage et de sécurisation.",
+              imageUrl: "https://www.acecloudhosting.com/wp-content/uploads/2022/12/saas.jpg",
+              pageUrl: "/servicesXaas"
             },
             {
               title: "Formation, Transfert de Compétences et Certification",
-              description: "Chaque connexion sous contrôle : des experts dédiés pour traquer et prévenir les risques",
-              imageUrl: "https://www.espritcoaching.fr/wp-content/uploads/formations_entreprise2.jpg"
+              description: "Renforcez vos défenses grâce à nos experts dédiés qui traquent et préviennent les risques à chaque connexion.",
+              imageUrl: "https://www.espritcoaching.fr/wp-content/uploads/formations_entreprise2.jpg",
+              pageUrl: "/certificationFormation"
             }
-          ].map((area, index) => (
-            <motion.div
-              key={index}
-              className="bg-white/10 p-6 rounded-xl border border-white/20 hover:bg-white/20 transition transform hover:scale-105 hover:shadow-lg duration-300"
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 * index, duration: 1 }}
-            >
-              <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden mb-4">
-                <img src={area.imageUrl} alt={area.title} className="w-full h-full object-cover" />
-              </div>
-              <h3 className="text-lg md:text-xl font-bold mb-3">{area.title}</h3>
-              <p className="text-white/70">{area.description}</p>
-            </motion.div>
-          ))}
-        </div>
-      </section>
+            ].map((area, index) => (
+              <motion.div
+                key={index}
+                className="bg-white/10 p-6 rounded-xl border border-white/20 hover:bg-white/20 transition transform hover:scale-105 hover:shadow-lg duration-300"
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 * index, duration: 1 }}
+              >
+                <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden mb-4">
+                  <Link to={area.pageUrl as string}>
+                    <img src={area.imageUrl} alt={area.title} className="w-full h-full object-cover" />
+                  </Link>
+                </div>
+                <h3 className="text-lg md:text-xl font-bold mb-3">{area.title}</h3>
+                <p className="text-white/70">{area.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </section>
 
         {/* Section Appel à l'Action */}
         <section className="container mx-auto px-4 py-16 text-center">
@@ -139,7 +147,6 @@ const Home: React.FC = () => {
             </Link>
           </motion.div>
         </section>
-
         <PartnerLogos />
       </div>
     </div>

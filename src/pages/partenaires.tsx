@@ -8,7 +8,6 @@ interface Partner {
   logo: string;
   description: string;
   technologies: string[];
-  link?: string;
 }
 
 const Partners: React.FC = () => {

@@ -1,101 +1,120 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {
-  BookOpenIcon,
-  LinkIcon,
-  TrendingUpIcon,
-  ShieldIcon,
-  BarChartIcon,
-  WrenchIcon
+  FileSearchIcon,
+  WrenchIcon,
+  CodeIcon,
+  NetworkIcon,
+  CloudIcon,
+  BookOpenIcon
 } from 'lucide-react';
 
 interface ServiceItem {
   title: string;
-  description: string;
   icon: React.ReactNode;
+  shortDescription: string;
+  pageUrl:string
 }
 
 const Services: React.FC = () => {
   const services: ServiceItem[] = [
     {
-      title: "Formation",
-      description: "Il est essentiel de disposer d'un personnel conscient et informé de la cybersécurité pour minimiser le risque de cyberattaques. 90 % des cyberattaques exploitent une erreur humaine. Offrez à vos employés les clés pour anticiper, détecter et contrer les menaces.",
-      icon: <BookOpenIcon className="text-neoery-orange w-12 h-12" />,
+      title: "Conseil, Audit et Optimisation en solution IT et Télécom",
+      icon: <FileSearchIcon className="w-16 h-16 text-neoery-blue" />,
+      shortDescription: "Analyse stratégique et optimisation de vos solutions technologiques",
+      pageUrl:"/consulting"
     },
     {
-      title: "Intégration de Systèmes",
-      description: "Parce que chaque seconde compte, nos intégrations rendent vos systèmes plus rapides, plus intelligents, et parfaitement alignés.",
-      icon: <LinkIcon className="text-neoery-blue w-12 h-12" />,
+      title: "Assistance Technique, Maintenance et Support",
+      icon: <WrenchIcon className="w-16 h-16 text-neoery-green" />,
+      shortDescription: "Support technique continu et maintenance proactive",
+      pageUrl:"/assistance"
     },
     {
-      title: "Conseil en Transformation Digitale",
-      description: "Accompagnement stratégique pour moderniser vos infrastructures et processus informatiques. Réinventez votre entreprise pour demain : modernisez vos outils, automatisez vos processus, et libérez votre potentiel numérique.",
-      icon: <TrendingUpIcon className="text-neoery-green w-12 h-12" />,
+      title: "Ingénieurie et AMAO IT et Télécom",
+      icon: <CodeIcon className="w-16 h-16 text-neoery-orange" />,
+      shortDescription: "Expertise technique et pilotage de projets informatiques",
+      pageUrl:"/engineering"
     },
     {
-      title: "Cybersécurité",
-      description: "Protection avancée de vos systèmes d'information contre les menaces modernes. Anticipez les menaces, protégez vos données : avec notre expertise, la cybersécurité devient votre meilleur atout stratégique. Adoptez des solutions robustes pour une sérénité totale.",
-      icon: <ShieldIcon className="text-neoery-orange w-12 h-12" />,
+      title: "Conception, Integration et Opération",
+      icon: <NetworkIcon className="w-16 h-16 text-neoery-blue" />,
+      shortDescription: "Solutions sur-mesure et intégration harmonieuse",
+      pageUrl:"/conceptions"
     },
     {
-      title: "Audit",
-      description: "Une vision claire pour des décisions stratégiques : identifiez vos forces, vos faiblesses et révélez tout votre potentiel.",
-      icon: <BarChartIcon className="text-neoery-blue w-12 h-12" />,
+      title: "Services Managés XAAS",
+      icon: <CloudIcon className="w-16 h-16 text-neoery-green" />,
+      shortDescription: "Solutions cloud flexibles et évolutives",
+      pageUrl:"/servicesXaas"
     },
     {
-      title: "Maintenance & Support",
-      description: "Support technique continu et maintenance proactive de vos solutions informatiques. Proactif, réactif, efficace : notre support technique assure votre sérénité et maximise la disponibilité de vos solutions.",
-      icon: <WrenchIcon className="text-neoery-green w-12 h-12" />,
+      title: "Formation, Transfert de Compétences et Certification",
+      icon: <BookOpenIcon className="w-16 h-16 text-neoery-orange" />,
+      shortDescription: "Développement et certification des compétences",
+      pageUrl:"/certificationFormation"
     }
   ];
 
   return (
-    <div className="bg-gradient-to-br from-neoery-blue to-neoery-black text-white">
-      {/* Section Titre */}
-      <section className="container mx-auto px-4 py-16 text-center">
-        <h1 className="text-5xl font-bold text-neoery-orange mb-6">
-          Nos Services
-        </h1>
-        <p className="text-xl text-white/80 max-w-2xl mx-auto">
-          SYNERJ transforme vos défis technologiques en solutions innovantes et performantes.
-        </p>
-      </section>
+    <div className="bg-gray-50 min-h-screen">
+      {/* Hero Section */}
+      <div className="bg-gradient-to-r from-neoery-blue to-neoery-black text-white py-20">
+        <div className="container mx-auto px-4 text-center">
+          <h1 className="text-5xl font-bold mb-6 text-neoery-orange">
+            Nos Services
+          </h1>
+          <p className="text-xl max-w-3xl mx-auto text-white/80">
+            SYNERJ vous accompagne dans votre transformation digitale avec des solutions innovantes et sur-mesure.
+          </p>
+        </div>
+      </div>
 
-      {/* Grille des Services */}
-      <section className="container mx-auto px-4 pb-16">
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+      {/* Services Grid */}
+      <div className="container mx-auto px-4 py-16 -mt-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div
-              key={index}
-              className="bg-white/10 p-6 rounded-xl border border-white/20 hover:bg-white/20 transition transform hover:scale-105 hover:shadow-2xl duration-300 flex flex-col"
+            <div 
+              key={index} 
+              className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-8 text-center"
             >
-              <div className="mb-4 self-center">{service.icon}</div>
-              <h3 className="text-xl font-bold mb-3 text-neoery-orange text-center">
+              <div className="mb-6 flex justify-center">
+                {service.icon}
+              </div>
+              <h3 className="text-xl font-bold mb-4 text-neoery-black">
                 {service.title}
               </h3>
-              <p className="text-white/70 mb-4 text-center flex-grow">{service.description}</p>
+              <p className="text-gray-600 mb-6">
+                {service.shortDescription}
+              </p>
+              <Link 
+                to={service.pageUrl}
+                className="inline-block bg-neoery-blue text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition"
+              >
+                En savoir plus
+              </Link>
             </div>
           ))}
         </div>
-      </section>
+      </div>
 
-      {/* Section Appel à l'Action */}
-      <section className="container mx-auto px-4 py-16 text-center">
-        <div className="bg-gradient-to-r from-neoery-orange/30 to-neoery-blue/40 p-12 rounded-2xl shadow-xl">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Votre Projet Mérite Une Solution Sur-Mesure
+      {/* Call to Action */}
+      <div className="bg-gradient-to-r from-neoery-orange/10 to-neoery-blue/10 py-16">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-4xl font-bold mb-6 text-neoery-black">
+            Votre Transformation Digitale Commence Ici
           </h2>
-          <p className="text-xl mb-8 text-white/80">
-            Discutons de vos besoins et trouvons ensemble la solution technologique optimale.
+          <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+            Nous sommes à l'écoute de vos défis technologiques. Ensemble, trouvons la solution qui propulsera votre entreprise vers de nouveaux sommets.
           </p>
           <Link
             to="/contact"
-            className="bg-neoery-blue px-8 py-4 rounded-lg text-white font-semibold hover:bg-opacity-90 transition"
+            className="bg-neoery-orange text-white px-10 py-4 rounded-full text-lg font-semibold hover:bg-opacity-90 transition"
           >
-            Demander un Devis
+            Contactez-nous
           </Link>
         </div>
-      </section>
+      </div>
     </div>
   );
 };
