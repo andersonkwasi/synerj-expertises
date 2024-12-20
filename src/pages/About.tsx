@@ -9,6 +9,7 @@ import {
   CheckCircle2,
 } from 'lucide-react';
 import { motion } from 'framer-motion';
+import NosCertifications from '../components/Certifications';
 
 const About: React.FC = () => {
   const certifications = [
@@ -124,52 +125,8 @@ const About: React.FC = () => {
         </div>
       </section>
 
-      {/* Certifications - Section Redessinée */}
-      <section className="container mx-auto px-4 py-16">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
-          className="bg-white/5 rounded-3xl p-12 backdrop-blur-lg"
-        >
-          <h2 className="text-4xl font-bold text-center mb-4 text-neoery-orange">
-            Nos Certifications
-          </h2>          
-          <div className="grid lg:grid-cols-3 gap-8">
-            {certifications.map((cert, index) => (
-              <motion.div
-                key={index}
-                className="bg-white/10 rounded-xl overflow-hidden hover:bg-white/20 transition-all duration-300"
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.2, duration: 0.6 }}
-              >
-                <div className="p-6 border-b border-white/10">
-                  <div className="flex items-center mb-4">
-                    <cert.icon size={32} className="text-neoery-orange mr-4" />
-                    <div>
-                      <h3 className="text-2xl font-bold">{cert.title}</h3>
-                      <p className="text-white/60 text-sm">{cert.category}</p>
-                    </div>
-                  </div>
-                  <p className="text-white/80">{cert.description}</p>
-                </div>
-                <div className="p-6">
-                  <h4 className="font-semibold mb-4 text-neoery-green">Avantages clés :</h4>
-                  <ul className="space-y-3">
-                    {cert.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center text-white/70">
-                        <CheckCircle2 size={16} className="text-neoery-green mr-2" />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
-      </section>
+      {/* Certifications - Section Redessinée */} 
+      <NosCertifications />
     </div>
   );
 };
