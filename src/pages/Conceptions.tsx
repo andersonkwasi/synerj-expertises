@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  FaShieldAlt, FaLaptop, FaLock, FaNetworkWired,
+  FaShieldAlt, FaLaptop, FaLock,
   FaDatabase, FaTrashAlt, FaBalanceScale, FaWifi, FaEnvelope,
   FaCogs,
   FaFingerprint,

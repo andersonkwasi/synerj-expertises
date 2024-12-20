@@ -3,50 +3,12 @@ import {
   CheckCircle, 
   Star, 
   Handshake, 
-  Hand, 
-  Shield, 
-  Award,
-  CheckCircle2,
+  Hand
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import NosCertifications from '../components/Certifications';
 
 const About: React.FC = () => {
-  const certifications = [
-    {
-      icon: Shield,
-      title: "ISO 27001",
-      category: "Sécurité de l'Information",
-      description: "Garantit la sécurité de vos informations et de vos données stratégiques.",
-      features: [
-        "Gestion des risques",
-        "Protection des données",
-        "Continuité d'activité"
-      ]
-    },
-    {
-      icon: Award,
-      title: "CMMI Niveau 3",
-      category: "Excellence Opérationnelle",
-      description: "Assure la qualité et l'efficacité dans les processus de développement.",
-      features: [
-        "Processus standardisés",
-        "Amélioration continue",
-        "Qualité garantie"
-      ]
-    },
-    {
-      icon: Star,
-      title: "Microsoft Gold Partner",
-      category: "Expertise Technologique",
-      description: "Une reconnaissance de notre expertise avec les technologies Microsoft.",
-      features: [
-        "Cloud Azure",
-        "Solutions Enterprise",
-        "Support Premium"
-      ]
-    }
-  ];
 
   return (
     <div className="bg-gradient-to-br from-neoery-blue to-neoery-black text-white min-h-screen">
