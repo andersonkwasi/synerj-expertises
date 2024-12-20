@@ -7,7 +7,7 @@ const EngineeringPage: React.FC = () => {
   const engineeringServices = [
     {
       icon: FaChartLine,
-      title: "Ingénierie Stratégique",
+      title: "Ingénierie & Conception",
       description: "Conception de solutions technologiques sur mesure, alignées avec votre vision stratégique et vos objectifs métiers.",
     },
     {
@@ -22,7 +22,7 @@ const EngineeringPage: React.FC = () => {
     },
     {
       icon: FaRocket,
-      title: "Support à l'Implémentation",
+      title: "Appui à l'Implémentation",
       description: "Accompagnement complet lors du déploiement de nouvelles solutions technologiques.",
     }
   ];
@@ -35,9 +35,6 @@ const EngineeringPage: React.FC = () => {
           <h1 className="text-5xl font-extrabold text-gray-900 mb-6">
             Ingénierie & AMOA
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Transformer vos défis technologiques en solutions stratégiques grâce à une expertise technique sur mesure.
-          </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 mb-16">

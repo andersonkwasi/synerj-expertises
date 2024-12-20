@@ -9,8 +9,8 @@ export default defineConfig({
   },
 
 
-  //server: {
-    // host: true, // Permet d'accepter les connexions externes
-    // port: 5173, // Assurez-vous que le port 5173 est configuré
-  //},
+  // server: {
+  //  host: true, // Permet d'accepter les connexions externes
+  //  port: 5173, // Assurez-vous que le port 5173 est configuré
+  // },
 })

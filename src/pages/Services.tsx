@@ -12,46 +12,39 @@ import {
 interface ServiceItem {
   title: string;
   icon: React.ReactNode;
-  shortDescription: string;
   pageUrl:string
 }
 
 const Services: React.FC = () => {
   const services: ServiceItem[] = [
     {
-      title: "Conseil, Audit et Optimisation en solution IT et Télécom",
+      title: "Conseils, Audit et Optimisation",
       icon: <FileSearchIcon className="w-16 h-16 text-neoery-blue" />,
-      shortDescription: "Analyse stratégique et optimisation de vos solutions technologiques",
       pageUrl:"/consulting"
     },
     {
       title: "Assistance Technique, Maintenance et Support",
       icon: <WrenchIcon className="w-16 h-16 text-neoery-green" />,
-      shortDescription: "Support technique continu et maintenance proactive",
       pageUrl:"/assistance"
     },
     {
-      title: "Ingénieurie et AMAO IT et Télécom",
+      title: "Ingénieurie & AMO",
       icon: <CodeIcon className="w-16 h-16 text-neoery-orange" />,
-      shortDescription: "Expertise technique et pilotage de projets informatiques",
       pageUrl:"/engineering"
     },
     {
       title: "Conception, Integration et Opération",
       icon: <NetworkIcon className="w-16 h-16 text-neoery-blue" />,
-      shortDescription: "Solutions sur-mesure et intégration harmonieuse",
       pageUrl:"/conceptions"
     },
     {
       title: "Services Managés XAAS",
       icon: <CloudIcon className="w-16 h-16 text-neoery-green" />,
-      shortDescription: "Solutions cloud flexibles et évolutives",
       pageUrl:"/servicesXaas"
     },
     {
       title: "Formation, Transfert de Compétences et Certification",
       icon: <BookOpenIcon className="w-16 h-16 text-neoery-orange" />,
-      shortDescription: "Développement et certification des compétences",
       pageUrl:"/certificationFormation"
     }
   ];
@@ -84,9 +77,6 @@ const Services: React.FC = () => {
               <h3 className="text-xl font-bold mb-4 text-neoery-black">
                 {service.title}
               </h3>
-              <p className="text-gray-600 mb-6">
-                {service.shortDescription}
-              </p>
               <Link 
                 to={service.pageUrl}
                 className="inline-block bg-neoery-blue text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition"
@@ -102,11 +92,8 @@ const Services: React.FC = () => {
       <div className="bg-gradient-to-r from-neoery-orange/10 to-neoery-blue/10 py-16">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-6 text-neoery-black">
-            Votre Transformation Digitale Commence Ici
+            Votre Transformation Digitale et votre Cyber-Resilience Commence Ici
           </h2>
-          <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
-            Nous sommes à l'écoute de vos défis technologiques. Ensemble, trouvons la solution qui propulsera votre entreprise vers de nouveaux sommets.
-          </p>
           <Link
             to="/contact"
             className="bg-neoery-orange text-white px-10 py-4 rounded-full text-lg font-semibold hover:bg-opacity-90 transition"

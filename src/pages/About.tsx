@@ -66,7 +66,7 @@ const About: React.FC = () => {
           transition={{ delay: 0.3, duration: 0.6 }}
         >
           Née d'une synergie d'expériences et d'expertises, <strong>SYNERJ</strong> est une SS2I spécialisée dans l'accompagnement des entreprises à adresser les défis et problématiques
-          liées aux métiers de l'informatique, avec des valeurs propres à la vision du fondateur.
+          liées aux métiers de l'informatique, avec des valeurs propres alignées sur notre vision.
         </motion.p>
       </section>
 
@@ -134,11 +134,7 @@ const About: React.FC = () => {
         >
           <h2 className="text-4xl font-bold text-center mb-4 text-neoery-orange">
             Nos Certifications
-          </h2>
-          <p className="text-center text-white/80 mb-12 max-w-2xl mx-auto">
-            Des certifications reconnues qui garantissent notre expertise et notre engagement envers l'excellence.
-          </p>
-          
+          </h2>          
           <div className="grid lg:grid-cols-3 gap-8">
             {certifications.map((cert, index) => (
               <motion.div

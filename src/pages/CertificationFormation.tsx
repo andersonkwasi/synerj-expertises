@@ -10,31 +10,17 @@ const CertificationFormation: React.FC = () => {
       icon: FaUserGraduate,
       title: "Formations Expertes",
       description: "Programmes de formation sur mesure conçus pour élever les compétences de vos équipes.",
-      details: [
-        "Formations techniques spécialisées",
-        "Modules adaptés à vos besoins",
-        "Apprentissage pratique"
-      ]
+
     },
     {
       icon: FaUserTie,
       title: "Transfert de Compétences",
       description: "Stratégie complète de transmission et de développement des compétences internes.",
-      details: [
-        "Coaching personnalisé",
-        "Mentorat expert",
-        "Accompagnement à long terme"
-      ]
     },
     {
       icon: FaUserCheck,
       title: "Parcours de Certification",
       description: "Préparation et accompagnement pour l'obtention de certifications professionnelles.",
-      details: [
-        "Préparation aux certifications",
-        "Suivi personnalisé",
-        "Validation des compétences"
-      ]
     }
   ];
 
@@ -89,13 +75,6 @@ const CertificationFormation: React.FC = () => {
               <p className="text-gray-600 text-center mb-6 min-h-[100px]">
                 {service.description}
               </p>
-              <div className="bg-indigo-50 rounded-lg p-4">
-                <ul className="list-disc list-inside text-indigo-700">
-                  {service.details.map((detail, idx) => (
-                    <li key={idx} className="mb-1">{detail}</li>
-                  ))}
-                </ul>
-              </div>
             </div>
           ))}
         </div>

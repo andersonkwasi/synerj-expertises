@@ -21,18 +21,16 @@ const Home: React.FC = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <h1 className="text-3xl md:text-5xl font-bold leading-tight">
+            <h1 className="text-2xl md:text-5xl font-bold leading-tight">
               Avec <strong>SYNERJ</strong>, alliez innovation et sécurité pour bâtir des solutions numériques robustes, fiables et adaptées à vos défis technologiques.
             </h1>
-            <p className="text-lg md:text-xl text-white/80">
-              <strong>SYNERJ</strong> vous propose des solutions informatiques sur mesure qui propulsent votre entreprise à l'avant-garde de l'innovation numérique.
-            </p>
+  
             <div className="flex space-x-4">
               <Link
                 to="/services"
                 className="bg-neoery-orange px-6 py-3 rounded-lg hover:bg-opacity-90 transition font-semibold"
               >
-                Découvrir nos Solutions
+                Découvrir nos poles de services
               </Link>
               <Link
                 to="/contact"
@@ -70,38 +68,32 @@ const Home: React.FC = () => {
           </motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[{
-              title: "Conseil, Audit et Optimisation en solution IT et Télécom",
-              description: "Transformez vos failles en remparts de sécurité grâce à notre expertise en audit et optimisation des systèmes informatiques.",
+              title: "Conseils, Audit et Optimisation",
               imageUrl: "https://assets-global.website-files.com/62976fe97a37b922a46d6609/6425631fa838bd4853017334_7.png",
               pageUrl: "/consulting"
             },
             {
-              title: "Assistance Technique, Maintenance et Support",
-              description: "Libérez votre potentiel avec notre sécurité externalisée qui vous protège sans compromis.",
+              title: "Assistance Technique Maintenance et Support",
               imageUrl: "https://i1.moyens.net/io/images/2022/02/Limportance-des-services-informatiques.jpg",
               pageUrl: "/assistance"
             },
             {
-              title: "Ingénieurie et AMAO IT et Télécom",
-              description: "Bénéficiez d'un bouclier intelligent contre les risques d'intrusion grâce à notre maîtrise des accès critiques.",
+              title: "Ingénieurie et AMO",
               imageUrl: "https://th.bing.com/th/id/OIP.PshIiN9l_cGVjzHqirXQXAHaD3?rs=1&pid=ImgDetMain",
               pageUrl: "/engineering"
             },
             {
               title: "Conception, Integration et Opération",
-              description: "Votre conformité garantie et vos communications protégées, grâce à notre expertise en messagerie sécurisée.",
               imageUrl: "https://img.freepik.com/vector-premium/dibujo-fabrica-cielo-azul-fondo-nubes_1108514-68450.jpg",
               pageUrl: "/conceptions"
             },
             {
               title: "Services Managés XAAS",
-              description: "Transformez votre réseau en un territoire infranchissable pour les cybermenaces avec nos services de filtrage, de blocage et de sécurisation.",
               imageUrl: "https://www.acecloudhosting.com/wp-content/uploads/2022/12/saas.jpg",
               pageUrl: "/servicesXaas"
             },
             {
               title: "Formation, Transfert de Compétences et Certification",
-              description: "Renforcez vos défenses grâce à nos experts dédiés qui traquent et préviennent les risques à chaque connexion.",
               imageUrl: "https://www.espritcoaching.fr/wp-content/uploads/formations_entreprise2.jpg",
               pageUrl: "/certificationFormation"
             }
@@ -119,7 +111,6 @@ const Home: React.FC = () => {
                   </Link>
                 </div>
                 <h3 className="text-lg md:text-xl font-bold mb-3">{area.title}</h3>
-                <p className="text-white/70">{area.description}</p>
               </motion.div>
             ))}
           </div>
@@ -136,9 +127,6 @@ const Home: React.FC = () => {
             <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6">
               Prêt à Propulser Votre Transformation Digitale ?
             </h2>
-            <p className="text-xl md:text-2xl text-white/80 mb-8">
-              Discutons de la façon dont <strong>SYNERJ</strong> peut vous aider à atteindre vos objectifs technologiques.
-            </p>
             <Link
               to="/contact"
               className="bg-neoery-blue px-8 py-4 rounded-lg text-white font-semibold hover:bg-opacity-90 transition transform hover:scale-105"

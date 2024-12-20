@@ -1,7 +1,6 @@
 import React from 'react';
 import {
-  BsFillShieldFill, BsClipboardDataFill, BsLightningChargeFill,
-  BsGearFill, BsGraphUp, BsLockFill
+  BsFillShieldFill, BsClipboardDataFill, BsLightningChargeFill
 } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 
@@ -11,51 +10,19 @@ const ConsultingPage: React.FC = () => {
       icon: BsFillShieldFill,
       title: "Conseil Stratégique IT",
       description: "Alignement précis de vos solutions technologiques avec vos objectifs stratégiques métiers.",
-      details: [
-        "Diagnostic stratégique complet",
-        "Feuille de route technologique",
-        "Alignement business-IT"
-      ]
     },
     {
       icon: BsClipboardDataFill,
       title: "Audit et Cybersécurité",
       description: "Évaluation comprehensive de la sécurité et de la performance de vos systèmes informatiques.",
-      details: [
-        "Audit de sécurité approfondi",
-        "Analyse des vulnérabilités",
-        "Conformité réglementaire"
-      ]
     },
     {
       icon: BsLightningChargeFill,
       title: "Implémentation Agile",
       description: "Déploiement expert de solutions IT avec une approche flexible et performante.",
-      details: [
-        "Intégration technique",
-        "Gestion de projet dynamique",
-        "Optimisation continue"
-      ]
     }
   ];
 
-  const expertiseHighlights = [
-    {
-      icon: BsGearFill,
-      title: "Expertise Technique",
-      description: "Une équipe de consultants hautement qualifiés avec plus de 15 ans d'expérience dans les solutions IT et Télécom."
-    },
-    {
-      icon: BsGraphUp,
-      title: "Approche Performance",
-      description: "Méthodologie centrée sur l'amélioration continue et la maximisation de la valeur technologique."
-    },
-    {
-      icon: BsLockFill,
-      title: "Sécurité Renforcée",
-      description: "Mise en œuvre systématique des meilleures pratiques de cybersécurité et de protection des données."
-    }
-  ];
 
   const auditDetails = [
     "Audit de sécurité système",
@@ -75,11 +42,9 @@ const ConsultingPage: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h1 className="text-5xl font-extrabold text-gray-900 mb-6">
-            Conseil & Solutions IT Stratégiques
+            Conseil, Audit et Optimisation
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Transformez vos défis technologiques en opportunités stratégiques avec notre expertise globale.
-          </p>
+
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
@@ -101,13 +66,6 @@ const ConsultingPage: React.FC = () => {
               <p className="text-gray-600 text-center mb-6 min-h-[100px]">
                 {service.description}
               </p>
-              <div className="bg-blue-50 rounded-lg p-4">
-                <ul className="list-disc list-inside text-gray-700">
-                  {service.details.map((detail, idx) => (
-                    <li key={idx} className="mb-1">{detail}</li>
-                  ))}
-                </ul>
-              </div>
             </div>
           ))}
         </div>
@@ -130,21 +88,6 @@ const ConsultingPage: React.FC = () => {
                 className="rounded-xl shadow-lg"
               />
             </div>
-          </div>
-        </section>
-
-        <section className="bg-white rounded-2xl shadow-lg p-12 mb-16">
-          <h2 className="text-4xl font-bold text-center mb-12">Notre Différenciation</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {expertiseHighlights.map((highlight, index) => (
-              <div key={index} className="text-center">
-                <div className="flex justify-center mb-6">
-                  <highlight.icon className="h-16 w-16 text-blue-500" />
-                </div>
-                <h3 className="text-2xl font-semibold mb-4">{highlight.title}</h3>
-                <p className="text-gray-600">{highlight.description}</p>
-              </div>
-            ))}
           </div>
         </section>
 
