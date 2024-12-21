@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 
 const NosCertifications: React.FC = () => {
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [scrollWidth, setScrollWidth] = useState(0);
+
   const certifications = [
     '/Certificats/CCNP.png',
     '/Certificats/Rapid7.png',
@@ -15,15 +18,46 @@ const NosCertifications: React.FC = () => {
     '/Certificats/wallix.png',
   ];
 
+  useEffect(() => {
+    if (scrollRef.current) {
+      setScrollWidth(scrollRef.current.scrollWidth / 2);
+    }
+  }, []);
+
+  const scrollStyle = {
+    animation: `certScroll ${scrollWidth * 0.01}s linear infinite`, // Ajustez 0.03 pour la vitesse
+  };
+
   return (
     <div className="py-16">
+      <style>
+        {`
+          @keyframes certScroll {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(-${scrollWidth}px);
+            }
+          }
+          
+          .cert-scroll:hover {
+            animation-play-state: paused;
+          }
+        `}
+      </style>
+
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-12 text-orange-500">
           Nos Certifications
         </h2>
+        
         <div className="relative overflow-hidden">
-          {/* Container pour le défilement */}
-          <div className="flex whitespace-nowrap animate-marquee">
+          <div 
+            ref={scrollRef}
+            className="cert-scroll flex space-x-8"
+            style={scrollStyle}
+          >
             {/* Premier groupe de certifications */}
             <div className="flex space-x-8">
               {certifications.map((cert, index) => (
@@ -39,6 +73,7 @@ const NosCertifications: React.FC = () => {
                 </div>
               ))}
             </div>
+
             {/* Deuxième groupe de certifications */}
             <div className="flex space-x-8">
               {certifications.map((cert, index) => (
