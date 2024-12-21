@@ -5,7 +5,6 @@ import service from "../assets/Synerj.jpeg";
 import SecurityCarousel from "../components/SecurityCarousel";
 import PartnerLogos from "../components/PartnerLogos";
 
-
 const Home: React.FC = () => {
   return (
     <div>
@@ -24,11 +23,11 @@ const Home: React.FC = () => {
             <h1 className="text-2xl md:text-5xl font-bold leading-tight">
               Avec <strong>SYNERJ</strong>, alliez innovation et sécurité pour bâtir des solutions numériques robustes, fiables et adaptées à vos défis technologiques.
             </h1>
-  
-            <div className="flex space-x-4">
+
+            <div className="flex space-x-4 flex-wrap justify-center md:justify-start">
               <Link
                 to="/services"
-                className="bg-neoery-orange px-6 py-3 rounded-lg hover:bg-opacity-90 transition font-semibold"
+                className="bg-neoery-orange px-6 py-3 rounded-lg hover:bg-opacity-90 transition font-semibold mb-4 md:mb-0"
               >
                 Découvrir nos poles de services
               </Link>
@@ -119,19 +118,19 @@ const Home: React.FC = () => {
         {/* Section Appel à l'Action */}
         <section className="container mx-auto px-4 py-16 text-center">
           <motion.div
-            className="bg-gradient-to-br from-neoery-orange/20 to-neoery-blue/30 p-12 rounded-2xl shadow-lg"
+            className="bg-gradient-to-br from-neoery-orange/20 to-neoery-blue/30 p-8 md:p-12 rounded-2xl shadow-lg"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-6">
               Prêt à Propulser Votre Transformation Digitale ?
             </h2>
             <Link
               to="/contact"
               className="bg-neoery-blue px-8 py-4 rounded-lg text-white font-semibold hover:bg-opacity-90 transition transform hover:scale-105"
             >
-              Commencer Maintenant
+              Commencer Maintenant.
             </Link>
           </motion.div>
         </section>
