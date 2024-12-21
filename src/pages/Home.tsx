@@ -116,21 +116,21 @@ const Home: React.FC = () => {
         </section>
 
         {/* Section Appel à l'Action */}
-        <section className="container mx-auto px-4 py-16 text-center">
+        <section className="container mx-auto px-4 py-8 sm:py-12 md:py-16 text-center">
           <motion.div
-            className="bg-gradient-to-br from-neoery-orange/20 to-neoery-blue/30 p-8 md:p-12 rounded-2xl shadow-lg"
+            className="bg-gradient-to-br from-neoery-orange/20 to-neoery-blue/30 p-6 sm:p-8 md:p-12 rounded-2xl shadow-lg"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-4 sm:mb-6">
               Prêt à Propulser Votre Transformation Digitale ?
             </h2>
             <Link
               to="/contact"
-              className="bg-neoery-blue px-8 py-4 rounded-lg text-white font-semibold hover:bg-opacity-90 transition transform hover:scale-105"
+              className="inline-block bg-neoery-blue px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-white text-sm sm:text-base font-semibold hover:bg-opacity-90 transition transform hover:scale-105"
             >
-              Commencer Maintenant.
+              Commencer Maintenant
             </Link>
           </motion.div>
         </section>
