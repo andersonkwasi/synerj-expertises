@@ -4,6 +4,7 @@ import Logo from '../media/logo_synerj.jpeg';
 
 const Header: React.FC = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // État pour le menu mobile
   const [delayHide, setDelayHide] = useState<ReturnType<typeof setTimeout> | null>(null);
 
   const handleMouseEnter = () => {
@@ -40,14 +41,45 @@ const Header: React.FC = () => {
             />
           </Link>
         </div>
+
+        {/* Bouton Hamburger pour petits écrans */}
+        <button
+          className="text-neoery-blue focus:outline-none md:hidden"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-8 w-8"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+            />
+          </svg>
+        </button>
+
         {/* Navigation principale */}
-        <nav className="hidden md:block">
-          <ul className="flex space-x-6 text-xl">
+        <nav
+          className={`${
+            isMenuOpen ? "block" : "hidden"
+          } md:block absolute md:static top-full left-0 w-full bg-white md:w-auto`}
+        >
+          <ul className="flex flex-col md:flex-row md:space-x-6 text-xl p-4 md:p-0">
             <li>
-              <Link to="/" className="hover:text-neoery-orange transition">
+              <Link
+                to="/"
+                className="hover:text-neoery-orange transition block md:inline"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Accueil
               </Link>
             </li>
+
             {/* Services avec toggle */}
             <li
               className="relative group"
@@ -56,7 +88,7 @@ const Header: React.FC = () => {
             >
               <Link
                 to="/services"
-                className="hover:text-neoery-orange transition"
+                className="hover:text-neoery-orange transition block md:inline"
               >
                 Services
               </Link>
@@ -68,6 +100,7 @@ const Header: React.FC = () => {
                     <Link
                       to="/consulting"
                       className="block px-4 py-2 hover:bg-gray-100 hover:text-neoery-orange transition"
+                      onClick={() => setIsMenuOpen(false)}
                     >
                       Conseil
                     </Link>
@@ -76,6 +109,7 @@ const Header: React.FC = () => {
                     <Link
                       to="/assistance"
                       className="block px-4 py-2 hover:bg-gray-100 hover:text-neoery-orange transition"
+                      onClick={() => setIsMenuOpen(false)}
                     >
                       Assistance Technique
                     </Link>
@@ -84,6 +118,7 @@ const Header: React.FC = () => {
                     <Link
                       to="/engineering"
                       className="block px-4 py-2 hover:bg-gray-100 hover:text-neoery-orange transition"
+                      onClick={() => setIsMenuOpen(false)}
                     >
                       Ingénierie & AMO
                     </Link>
@@ -91,13 +126,22 @@ const Header: React.FC = () => {
                 </ul>
               )}
             </li>
+
             <li>
-              <Link to="/contact" className="hover:text-neoery-orange transition">
+              <Link
+                to="/contact"
+                className="hover:text-neoery-orange transition block md:inline"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Contact
               </Link>
             </li>
             <li>
-              <Link to="/about" className="hover:text-neoery-orange transition">
+              <Link
+                to="/about"
+                className="hover:text-neoery-orange transition block md:inline"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 À-propos
               </Link>
             </li>

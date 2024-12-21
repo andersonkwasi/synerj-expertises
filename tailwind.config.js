@@ -6,13 +6,14 @@ export default {
   theme: {
     extend: {
       colors:{
+        'neoery-gold':"#FFD700",
         'neoery-black': '#000000',
         'neoery-blue': '#0073E6',
         'neoery-green': '#00A86B',
         'neoery-orange': '#FF6B35'
       },
       fontFamily:{
-        'sans':['Arial', 'sans-serif']
+        sans: ['Inter', 'system-ui', 'sans-serif']
       },
       animation: {
         marquee: "marquee 20s linear infinite",

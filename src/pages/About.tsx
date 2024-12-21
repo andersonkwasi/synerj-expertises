@@ -29,7 +29,7 @@ const About: React.FC = () => {
           transition={{ delay: 0.3, duration: 0.6 }}
         >
           Née d'une synergie d'expériences et d'expertises, <strong>SYNERJ</strong> est une SS2I spécialisée dans l'accompagnement des entreprises à adresser les défis et problématiques
-          liées aux métiers de l'informatique, avec des valeurs propres alignées sur notre vision.
+          liées aux métiers de l'informatique, avec des valeurs propres alignées sur <a href="#vision" className='text-neoery-green'>notre vision</a>.
         </motion.p>
       </section>
 
@@ -53,8 +53,8 @@ const About: React.FC = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="text-xl font-bold mb-4 text-neoery-green">Notre Vision</h3>
-            <p className="text-white/70 leading-relaxed">
+            <h3 className="#vision text-4xl font-bold mb-4 text-neoery-green">Notre Vision</h3>
+            <p className="text-neoery-gold font-bold leading-relaxed">
               Être le partenaire de confiance pour les entreprises qui recherchent des solutions informatiques innovantes, sécurisées et adaptées à leur environnement.
             </p>
           </motion.div>
