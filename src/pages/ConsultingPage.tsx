@@ -30,7 +30,6 @@ const ConsultingPage: React.FC = () => {
     "Audit d’architecture",
     "Test d'intrusions",
     "Audit de réseau et d'architecture",
-    "Conformité ISO 27001 et ISO 22301",
     "Plan de continuité d'activité",
     "Analyse des risques IT",
     "Protection des infrastructures critiques",

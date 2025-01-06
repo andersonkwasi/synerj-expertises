@@ -11,19 +11,9 @@ const EngineeringPage: React.FC = () => {
       description: "Conception de solutions technologiques sur mesure, alignées avec votre vision stratégique et vos objectifs métiers.",
     },
     {
-      icon: FaWrench,
-      title: "Optimisation des Solutions",
-      description: "Amélioration continue de vos systèmes pour maximiser performance, efficacité et rentabilité.",
-    },
-    {
       icon: FaCheckCircle,
       title: "Mise en Œuvre & Conformité",
       description: "Déploiement rigoureux et conformité réglementaire pour des solutions sécurisées et normatives.",
-    },
-    {
-      icon: FaRocket,
-      title: "Appui à l'Implémentation",
-      description: "Accompagnement complet lors du déploiement de nouvelles solutions technologiques.",
     }
   ];
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { 
-  FaLaptop, FaTools, FaClipboardList, 
+  FaLaptop, FaClipboardList, 
   FaCloudDownloadAlt, FaUserCog
 } from 'react-icons/fa';
 
@@ -9,32 +9,18 @@ const Assistance: React.FC = () => {
     {
       icon: FaLaptop,
       title: "Suivi des Actifs et du martériel Informatique",
-      description: "Gestion complète de votre parc informatique, de l'inventaire à la maintenance préventive.",
-      details: [
-        "Inventaire détaillé",
-        "Tracking des équipements",
-        "Maintenance proactive"
-      ]
     },
     {
       icon: FaClipboardList,
       title: "Inventaire partiel ou complet de votre parc Informatique",
-      description: "Réalisation d'inventaires partiels ou complets pour une visibilité totale de votre infrastructure.",
-    },
-    {
-      icon: FaTools,
-      title: "Gestion du Parc Informatique",
-      description: "Solution intégrée pour la gestion complète de votre infrastructure technologique.",
     },
     {
       icon: FaCloudDownloadAlt,
       title: "Gestion des Actifs Logiciels",
-      description: "Optimisation de vos licences et ressources logicielles avec des outils avancés.",
     },
     {
       icon: FaUserCog,
-      title: "Assistance et Support Technique",
-      description: "Assistance technique réactive et personnalisée pour résoudre vos défis informatiques.",
+      title: "Maintenance de votre parc informatique et support"
     }
   ];
 
@@ -47,7 +33,7 @@ const Assistance: React.FC = () => {
           </h1>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 mb-16">
           {assistanceServices.map((service, index) => (
             <div 
               key={index} 
@@ -65,9 +51,6 @@ const Assistance: React.FC = () => {
               <h3 className="text-2xl font-bold mb-4 text-center text-blue-800">
                 {service.title}
               </h3>
-              <p className="text-gray-600 text-center mb-6 min-h-[100px]">
-                {service.description}
-              </p>
             </div>
           ))}
         </div>

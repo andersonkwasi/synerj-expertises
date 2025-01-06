@@ -94,7 +94,7 @@ const Home: React.FC = () => {
             {
               title: "Formation, Transfert de Compétences et Certification",
               imageUrl: "https://www.espritcoaching.fr/wp-content/uploads/formations_entreprise2.jpg",
-              pageUrl: "/certificationFormation"
+              pageUrl: ""
             }
             ].map((area, index) => (
               <motion.div

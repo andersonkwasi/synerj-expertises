@@ -10,16 +10,8 @@ const PartnerLogos: React.FC = () => {
       logo: "https://www.morphisec.com/hubfs/Morphisec-Logo.svg"
     },
     {
-      name: "WALLIX",
-      logo: "https://www.wallix.com/wp-content/uploads/2023/06/wallx_2023_OK062023_blanc_OK.svg"
-    },
-    {
       name: "Mailinblack",
       logo: "https://www.mailinblack.com/wp-content/uploads/2024/03/logomailinblackfr1.webp"
-    },
-    {
-      name: "Ivanti",
-      logo: "https://static.ivanti.com/sites/marketing/media/images/logos/ivanti-logo-red.svg"
     },
     {
       name: "Fortinet",
@@ -34,8 +26,8 @@ const PartnerLogos: React.FC = () => {
       logo: "https://www.f5.com/content/dam/f5/f5-logo.svg"
     },
     {
-      name: "Symantec",
-      logo: "https://vip.symantec.com/images/symclogo.png"
+      name: "Netwrix",
+      logo: "https://img.netwrix.com/elements/netwrix_logo.svg"
     }
   ];
 
