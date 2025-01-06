@@ -1,6 +1,6 @@
 import React from 'react';
 import { 
-  FaChartLine, FaWrench, FaCheckCircle, FaRocket
+  FaChartLine, FaCheckCircle
 } from 'react-icons/fa';
 
 const EngineeringPage: React.FC = () => {
