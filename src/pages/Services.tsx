@@ -45,7 +45,7 @@ const Services: React.FC = () => {
     {
       title: "Formation, Transfert de Compétences et Certification",
       icon: <BookOpenIcon className="w-16 h-16 text-neoery-orange" />,
-      pageUrl:"/certificationFormation"
+      pageUrl:""
     }
   ];
 

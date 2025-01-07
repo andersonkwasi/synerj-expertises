@@ -10,16 +10,36 @@ const PartnerLogos: React.FC = () => {
       logo: "https://www.morphisec.com/hubfs/Morphisec-Logo.svg"
     },
     {
+      name: "Sentinelone",
+      logo: "https://www.sentinelone.com/wp-content/themes/sentinelone/assets/svg/header-logo-dark.svg"
+    },
+    {
+      name: "Cybereason",
+      logo: "https://www.cybereason.com/hubfs/dam/images/images-web/logos/cr-brand/cr-logo-inline--primary-black.png"
+    },
+    {
       name: "Mailinblack",
       logo: "https://www.mailinblack.com/wp-content/uploads/2024/03/logomailinblackfr1.webp"
+    },
+    {
+      name: "Fortra",
+      logo: "https://static.fortra.com/fortra-global-assets/fortra-logo-full.svg"
     },
     {
       name: "Fortinet",
       logo: "https://www.fortinet.com/content/dam/fortinet/images/general/fortinet-logo.svg"
     },
     {
+      name: "Secpoint",
+      logo: "https://www.secpoint.com/assets/logo.webp"
+    },
+    {
       name: "Device 42",
       logo: "https://www.device42.com/wp-content/uploads/2024/05/device42-fw-black.webp"
+    },
+    {
+      name: "Hillstone",
+      logo: "https://www.hillstonenet.com/wp-content/uploads/hillstone-networks-logo.svg"
     },
     {
       name: "F5",

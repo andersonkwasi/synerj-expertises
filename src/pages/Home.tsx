@@ -124,13 +124,13 @@ const Home: React.FC = () => {
             transition={{ duration: 1 }}
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-4 sm:mb-6">
-              Prêt à Propulser Votre Transformation Digitale ?
+            Transformons votre avenir digital dès maintenant !
             </h2>
             <Link
               to="/contact"
               className="inline-block bg-neoery-blue px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-white text-sm sm:text-base font-semibold hover:bg-opacity-90 transition transform hover:scale-105"
             >
-              Commencer Maintenant
+              Commencer
             </Link>
           </motion.div>
         </section>
