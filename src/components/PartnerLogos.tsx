@@ -10,6 +10,30 @@ const PartnerLogos: React.FC = () => {
       logo: "https://www.morphisec.com/hubfs/Morphisec-Logo.svg"
     },
     {
+      name: "Kemp",
+      logo: "https://www.edgenexus.io/wp-content/uploads/2021/07/kemp-logo.png"
+
+    },
+    {
+      name: "Forescout",
+      logo: "https://www.forescout.com/wp-content/themes/forescout_custom_theme2021/public/images/logo.svg"
+    },
+
+    {
+      name: "Silverfort",
+      logo: "https://cybercompare.com/wp-content/uploads/2024/02/Silverfort_Logo_Black-1024x224.png"
+    },
+    {
+      name: "Silverfort",
+      logo: "https://old.roi4cio.com/fileadmin/user_upload/SearchInform_Information_Security_Perimeter.png"
+    },
+
+    {
+      name: "CyberArk",
+      logo: "https://www.is4u.be/wp-content/uploads/2022/06/CyberArk_logo_Colour-800x241.png"
+    },
+
+    {
       name: "Sentinelone",
       logo: "https://www.sentinelone.com/wp-content/themes/sentinelone/assets/svg/header-logo-dark.svg"
     },
@@ -31,7 +55,7 @@ const PartnerLogos: React.FC = () => {
     },
     {
       name: "Secpoint",
-      logo: "https://www.secpoint.com/assets/logo.webp"
+      logo: "https://www.depoturk.com/img/brands/secpoint.png"
     },
     {
       name: "Device 42",

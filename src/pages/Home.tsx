@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion'; // Importez motion pour les animations
+import { motion } from 'framer-motion'; 
 import service from "../assets/Synerj.jpeg";
 import SecurityCarousel from "../components/SecurityCarousel";
 import PartnerLogos from "../components/PartnerLogos";
