@@ -12,27 +12,35 @@ const PartnerLogos: React.FC = () => {
     {
       name: "Kemp",
       logo: "https://www.edgenexus.io/wp-content/uploads/2021/07/kemp-logo.png"
-
     },
     {
       name: "Forescout",
       logo: "https://www.forescout.com/wp-content/themes/forescout_custom_theme2021/public/images/logo.svg"
     },
-
+    {
+      name: "Cisco",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cisco_logo_blue_2016.svg/1200px-Cisco_logo_blue_2016.svg.png"
+    },
     {
       name: "Silverfort",
       logo: "https://cybercompare.com/wp-content/uploads/2024/02/Silverfort_Logo_Black-1024x224.png"
     },
     {
-      name: "Silverfort",
+      name: "Gatewatcher",
+      logo: "https://www.hexatrust.com/wp-content/uploads/2023/11/GW_Logotype_RED_RVB_EXE.png"
+    },
+    {
+      name: "Varonis",
+      logo: "https://www.exclusive-networks.com/ma/wp-content/uploads/sites/2/2021/03/Varonis-Logo-e1613231318431.png"
+    },
+    {
+      name: "SearchInform",
       logo: "https://old.roi4cio.com/fileadmin/user_upload/SearchInform_Information_Security_Perimeter.png"
     },
-
     {
-      name: "CyberArk",
-      logo: "https://www.is4u.be/wp-content/uploads/2022/06/CyberArk_logo_Colour-800x241.png"
+      name: "Ivanti",
+      logo: "https://static.ivanti.com/sites/marketing/media/images/logos/ivanti-logo-red.svg"
     },
-
     {
       name: "Sentinelone",
       logo: "https://www.sentinelone.com/wp-content/themes/sentinelone/assets/svg/header-logo-dark.svg"
@@ -40,6 +48,10 @@ const PartnerLogos: React.FC = () => {
     {
       name: "Cybereason",
       logo: "https://www.cybereason.com/hubfs/dam/images/images-web/logos/cr-brand/cr-logo-inline--primary-black.png"
+    },
+    {
+      name: "Knowbe4",
+      logo: "https://www.knowbe4.com/hs-fs/hubfs/Knowbe4_Dec2015/Logos/KB4-logo.png?width=200&name=KB4-logo.png"
     },
     {
       name: "Mailinblack",
@@ -50,15 +62,15 @@ const PartnerLogos: React.FC = () => {
       logo: "https://static.fortra.com/fortra-global-assets/fortra-logo-full.svg"
     },
     {
-      name: "Fortinet",
-      logo: "https://www.fortinet.com/content/dam/fortinet/images/general/fortinet-logo.svg"
+      name: "Paloalto",
+      logo: "https://www.paloaltonetworks.com/etc/clientlibs/clean/imgs/pan-logo-dark.svg"
     },
     {
       name: "Secpoint",
       logo: "https://www.depoturk.com/img/brands/secpoint.png"
     },
     {
-      name: "Device 42",
+      name: "Device42",
       logo: "https://www.device42.com/wp-content/uploads/2024/05/device42-fw-black.webp"
     },
     {
@@ -72,6 +84,10 @@ const PartnerLogos: React.FC = () => {
     {
       name: "Netwrix",
       logo: "https://img.netwrix.com/elements/netwrix_logo.svg"
+    },
+    {
+      name: "Solarwinds",
+      logo: "https://exer.fr/wp-content/uploads/2022/01/SW_Logo_Web_Orange.png.webp"
     }
   ];
 

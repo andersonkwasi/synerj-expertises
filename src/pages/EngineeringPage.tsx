@@ -1,7 +1,7 @@
 import React from 'react';
-import { 
-  FaChartLine, FaCheckCircle
-} from 'react-icons/fa';
+import {  FaChartLine, FaCheckCircle} from 'react-icons/fa';
+import amoaLogo from "../assets/img1.png";
+
 
 const EngineeringPage: React.FC = () => {
   const engineeringServices = [
@@ -24,18 +24,17 @@ const EngineeringPage: React.FC = () => {
         <div className="text-center mb-16">
           <h1 className="text-5xl font-extrabold text-gray-900 mb-6">
             Ingénierie & AMOA
-          </h1>
-        </div>
+          </h1>        
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 mb-16">
           {engineeringServices.map((service, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="bg-white border-2 border-blue-50 shadow-xl rounded-2xl p-6 
               transform hover:scale-105 hover:shadow-2xl transition duration-300 group"
             >
               <div className="flex items-center justify-center mb-6">
-                <service.icon 
+                <service.icon
                   className="h-16 w-16 text-blue-500 group-hover:text-blue-700 
                   transition duration-300 transform group-hover:scale-110"
                 />
@@ -49,6 +48,17 @@ const EngineeringPage: React.FC = () => {
             </div>
           ))}
         </div>
+
+        {/* Image ajoutée avec gestion du placeholder */}
+        <div className="mb-12">
+            <img
+              src={amoaLogo}
+              alt="Ingénierie et AMOA"
+              className="rounded-lg shadow-lg mx-auto w-full max-w-2xl"
+            />
+          </div>
+        </div>
+        
       </div>
     </div>
   );

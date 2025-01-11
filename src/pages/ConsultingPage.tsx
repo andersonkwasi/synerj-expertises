@@ -62,9 +62,9 @@ const ConsultingPage: React.FC = () => {
               <h3 className="text-2xl font-bold mb-4 text-center text-gray-800">
                 {service.title}
               </h3>
-              <p className="text-gray-600 text-center mb-6 min-h-[100px]">
-                {service.description}
-              </p>
+              {/*<p className="text-gray-600 text-center mb-6 min-h-[100px]">
+              {service.description}
+              </p> */}
             </div>
           ))}
         </div>
