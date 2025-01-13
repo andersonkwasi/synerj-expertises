@@ -13,10 +13,10 @@ const PartnerLogos: React.FC = () => {
       name: "Kemp",
       logo: "https://www.edgenexus.io/wp-content/uploads/2021/07/kemp-logo.png"
     },
-    {
+    /*{
       name: "Forescout",
       logo: "https://www.forescout.com/wp-content/themes/forescout_custom_theme2021/public/images/logo.svg"
-    },
+    },*/
     {
       name: "Cisco",
       logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cisco_logo_blue_2016.svg/1200px-Cisco_logo_blue_2016.svg.png"
@@ -77,10 +77,10 @@ const PartnerLogos: React.FC = () => {
       name: "Hillstone",
       logo: "https://www.hillstonenet.com/wp-content/uploads/hillstone-networks-logo.svg"
     },
-    {
+    /*{
       name: "F5",
       logo: "https://www.f5.com/content/dam/f5/f5-logo.svg"
-    },
+    },*/
     {
       name: "Netwrix",
       logo: "https://img.netwrix.com/elements/netwrix_logo.svg"
@@ -135,7 +135,7 @@ const PartnerLogos: React.FC = () => {
           {partners.map((partner, index) => (
             <div
               key={index}
-              className="flex-shrink-0 w-40 md:w-52 p-4 bg-gray-600 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+              className="flex-shrink-0 w-40 md:w-52 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
             >
               <img
                 src={partner.logo}
@@ -149,7 +149,7 @@ const PartnerLogos: React.FC = () => {
           {partners.map((partner, index) => (
             <div
               key={`duplicate-${index}`}
-              className="flex-shrink-0 w-40 md:w-52 p-4 bg-gray-600 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+              className="flex-shrink-0 w-40 md:w-52 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
             >
               <img
                 src={partner.logo}

@@ -6,16 +6,13 @@ const NosCertifications: React.FC = () => {
 
   const certifications = [
     '/Certificats/CCNP.png',
-    '/Certificats/Rapid7.png',
     '/Certificats/f5CTS.png',
     '/Certificats/F5CA.png',
     '/Certificats/fortinet.png',
-    '/Certificats/kaspersky.png',
     '/Certificats/palo.png',
-    '/Certificats/veeam.png',
     '/Certificats/virtualisation.png',
     '/Certificats/vmware.png',
-    '/Certificats/wallix.png',
+    '/Certificats/wallx.svg',
   ];
 
   useEffect(() => {
@@ -63,7 +60,7 @@ const NosCertifications: React.FC = () => {
               {certifications.map((cert, index) => (
                 <div
                   key={`first-${cert}-${index}`}
-                  className="flex items-center justify-center bg-white rounded-xl shadow-lg p-6 transform transition-all duration-300 hover:scale-110 hover:shadow-xl min-w-[200px] min-h-[160px] inline-block"
+                  className="flex items-center justify-center rounded-xl shadow-lg p-6 transform transition-all duration-300 hover:scale-110 hover:shadow-xl min-w-[200px] min-h-[160px] inline-block"
                 >
                   <img
                     src={cert}
@@ -79,7 +76,7 @@ const NosCertifications: React.FC = () => {
               {certifications.map((cert, index) => (
                 <div
                   key={`second-${cert}-${index}`}
-                  className="flex items-center justify-center bg-white rounded-xl shadow-lg p-6 transform transition-all duration-300 hover:scale-110 hover:shadow-xl min-w-[200px] min-h-[160px] inline-block"
+                  className="flex items-center justify-center rounded-xl shadow-lg p-6 transform transition-all duration-300 hover:scale-110 hover:shadow-xl min-w-[200px] min-h-[160px] inline-block"
                 >
                   <img
                     src={cert}
