@@ -55,11 +55,11 @@ const PartnerLogos: React.FC = () => {
     },
     {
       name: "Mailinblack",
-      logo: "https://www.mailinblack.com/wp-content/uploads/2024/03/logomailinblackfr1.webp"
+      logo: "https://www.oxylog.fr/wp-content/uploads/2019/12/Logo_mib-spam-long.png"
     },
     {
       name: "Fortra",
-      logo: "https://static.fortra.com/fortra-global-assets/fortra-logo-full.svg"
+      logo: "https://static.fortra.com/hs-logo.png"
     },
     {
       name: "Paloalto",
