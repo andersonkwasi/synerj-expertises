@@ -49,7 +49,23 @@ const PartnerLogos: React.FC = () => {
       name: "Netwrix",
       logo: "https://img.netwrix.com/elements/netwrix_logo.svg"
     },
-   
+    {
+      name: "Blancco",
+      logo: "https://www.blancco.com/fr/wp-content/uploads/sites/7/2021/07/Blancco_logo.svg"
+    },
+    {
+      name: "Microsoft",
+      logo: "https://uhf.microsoft.com/images/microsoft/RE1Mu3b.png"
+    },
+    {
+      name: "Proofpoint",
+      logo: "https://cybersecurity-excellence-awards.com/wp-content/uploads/2020/12/32820-1200x413.png"
+    },
+    {
+      name: "Tenable",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Tenable%2C_Inc._logo.svg/2560px-Tenable%2C_Inc._logo.svg.png"
+    },
+
   ];
 
   useEffect(() => {

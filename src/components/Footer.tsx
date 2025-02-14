@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
         {/* Colonne Contactez-nous */}
         <div className="text-center md:text-left">
           <h4 className="font-bold mb-4 text-base md:text-lg">Contactez-nous</h4>
-          <p className="text-base md:text-lg">Email: <a href="mailto:sales@synerj-expertises.com">sales@synerj-expertises.com</a></p>
+          <p className="text-base md:text-lg">Email: <a href="mailto:michael.lokossue@synerj-expertises.com">sales@synerj-expertises.com</a></p>
           <p className="text-base md:text-lg">Téléphone: +225 01 04 04 04 21/22</p>
         </div>
 
@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
 
       {/* Mention légale */}
       <div className="text-center mt-8 pt-4 border-t border-gray-700 text-base md:text-lg">
-        <p>&copy; 2024 SYNERJ EXPERTISES. Tous droits réservés.</p>
+        <p>&copy; 2025 SYNERJ EXPERTISES. Tous droits réservés.</p>
       </div>
     </footer>
   );
